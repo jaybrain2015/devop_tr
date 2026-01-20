@@ -16,3 +16,7 @@ jobs:
       - name: Run PHP syntax check
         run: |
           php -v
+          
+      - name: Break CI
+        run: |
+              thiscommanddoesnotexist 
