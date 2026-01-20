@@ -19,4 +19,4 @@ jobs:
           
       - name: Break CI
         run: |
-              thiscommanddoesnotexist 
+              git remote -v
