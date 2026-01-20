@@ -18,4 +18,5 @@ jobs:
 
       - name: Build Docker image
         run: |
-          docker build -t php-app:ci .
+          docker build -t php-app:ci devops/day6-php-docker
+
