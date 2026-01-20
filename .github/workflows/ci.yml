@@ -13,10 +13,9 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Run PHP syntax check
+      - name: Set up Docker
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build Docker image
         run: |
-          php -v
-          
-      - name: Break CI
-        run: |
-              thiscommanddoesnotexist 
+          docker build -t php-app:ci .
